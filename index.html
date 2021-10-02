@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>shengli wen</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="assets/gradient favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id = "orb1">
+    <canvas class="orb-canvas"></canvas>
+  </div>
+  <div id = "orb2">
+    <canvas class="orb-canvas2"></canvas>
+  </div>
+
+    
+    <div class = "flex-container">
+    <div class = "flex-child left">
+        <p id = "name" onclick = "showAbout()">shengli wen</p>
+        <div id = "showAbout">
+          <p><i>B.S.</i> NYU Shanghai, Interactive Media Arts, class of 2022 <br> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 
+
+             ⤷  minor in Global China Studies 
+            <br> <br> contact: shengli@nyu.edu
+            <br><br> CV
+          </p>
+
+        </div>
+        <p id = "projects-title">projects</p>
+  
+        <ol>
+          <li id = "l1" onclick="show1()">HUMAN ￮ CIRCUIT</li>
+          <li id = "l2" onclick="show2()">wildfire trends</li>
+          <li id = "l3" onclick="show3()">tones[i]</li>
+          <li id = "l4" onclick="show4()">generative postcard collection</li>
+          <li id = "l5" onclick="show5()">stray cats data zine</li>
+          <li id = "l6" onclick="show6()">random graphics</li>
+          <li id = "l7" onclick="show7()">shot on iPhone</li>
+        </ol>
+        <p id = "awards" onclick="showAwards()">awards / exhibitions</p>
+        <div id = "showAwards">
+          <ul>
+            <li>Social Impact Internship Grant, 2021</li>
+            <li>Interactive Media Arts End of Semester Show, 2018-2021</li>
+            <li>Acclimatise (contemporary dance piece), 2021</li>
+            <li>Adaption (contemporary dance piece), 2021</li>
+            <li> “无题", Chinese Poem featured in publication Every Step Counts, 2020</li>
+            <li>Celebrate Women Photo Exhibition, 2019</li>
+            
+          </ul>
+        </div>
+        
+</div>
+
+<div class = "flex-child right">
+  <div id= "show1">
+        <p id = "project-title">HUMAN ￮ CIRCUIT</p>
+        <img src = "assets/human-circuit.GIF" width = "500">
+        <p id = "detailtext">Interactive Installation, Arduino & Processing, 2021</p>
+        <p id = "descriptiontext">HUMAN ￮ CIRCUIT is an interactive visual installation that is influenced by my personal experience reemerging into normal life after almost a year of solitude. Pairing self-constructed capacitive sensors with Arduino and Processing, HUMAN ￮ CIRCUIT projects visuals onto a screen when two or more people join hands with the sensors. Prior research included inspirations such as Messe Di Voce by Golan Levin, and Manuela Donoso’s Walllight. 
+              These projects demonstrate different components of interaction: Levin’s piece invites continued exploration of a certain movement or sound by continuously generating visuals on the screen, while the emphasis of Walllight is to invite multiple participants to interact with the space. 
+              Conceptually, my goal for this project was to fuse these two components together, by generating visuals that respond when multiple people join hands with the sensors.
+            <br>
+            <br>
+            Watch a demo video <a href="https://www.youtube.com/watch?v=xFeCyKSrRRI&ab_channel=shengli">here</a>. 
+              Read more about the project <a href="https://wp.nyu.edu/nyushanghai-shengli_intlab/human-%ef%bf%ae-circuit-shengli-wen-marcela-godoy/">here</a>.
+       </p>
+        
+        <img src = "assets/human-circuit-1.jpeg" width = "400">
+      
+        <p id = "subtitle1">progress documentation </p>
+        <img src = "assets/human-circuit-wip1.jpeg" width = "200">
+        <img src = "assets/human-circuit-wip2.png" width = "200" padding-top= "100px">
+  </div>
+
+  <div id = "show2">
+    <p id = "project-title">California Wildfire Trends</p>
+    <img src = "assets/wildfire-heatmap.gif" width = "500px">
+    <p id = "detailtext">webpage, d3.js, 2021</p>
+    <p id = "descriptiontext">In recent years, the wildfire situation in California has become alarmingly destructive and severe. What exactly are the trends in California's wildfire data? Why do these patterns exist?
+      This data visualization project hightlights wildfires in California from 2013-2021, focusing specifically on where and when they tend to occur, in order to raise awareness on the effects of human-induced climate change on the West Coast.
+      Visit the website <a href="https://writecards.github.io/cdv-student/projects/data-story/final-structure/index.html">here</a>.
+    </p>
+    <p style = "padding-top: 20px;"><b>Prototype</b></p>
+    <img src = "assets/data story prototype 1.png" width = "400px">
+    <p style = "padding-top: 20px;"><b>The Process</b></p>
+    <p id = "descriptiontext">I approached this project with a focus on how to structure a visual narrative in order to make it appealing to the general reader. After exploring various formats, I decided to go with a "martini-glass" structure: key facts in the start (top 20 most destructive wildfires), followed by a chronology of events (attempted with the voronoi map), and a strong ending/kicker, which is the heatmap of all of the wildfires. Supplemented with text and images, I used this intentional structure in hopes of creating a narrative that is informative but not too overwhelming. By putting the visualizations in this order, I hoped to feed the reader's curiosity to find out more about the reasoning behind the data.</p>
+    <p style = "padding-top: 20px;"><b>Final Results</b></p>
+    <p id = "descriptiontext"></p>
+    
+    <img src = "assets/wf2.png" width = "300px">
+    <img src = "assets/wf1.png" width = "300px">
+    <img src = "assets/wf3.png" width = "300px">
+    <p id = "descriptiontext"> Read more about the project <a href = "https://github.com/writecards/cdv-student/blob/main/projects/data-story/final-structure/readme.md">here</a>.</p>
+    
+    
+    
+    
+
+
+  </div>
+
+  <div id = "show3">
+    <p>project 3 paragraph description here</p>
+  </div>
+
+  <div id = "show4">
+    <p>project 4 paragraph description here</p>
+  </div>
+
+  <div id = "show5">
+    <p>project 5 paragraph description here</p>
+  </div>
+
+  <div id = "show6">
+    <p>project 6 paragraph description here</p>
+  </div>
+
+  <div id = "show7">
+    <p>project 7 paragraph description here</p>
+  </div>
+
+  
+
+
+</div>
+
+
+</div>
+  
+
+<script type = "module" src = "orbscript.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+  </body>
+</html>
